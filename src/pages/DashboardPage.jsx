@@ -58,7 +58,9 @@ export default function DashboardPage() {
 
   const handleExport = (format) => {
     if (activeScan) {
-      scansApi.exportData(activeScan._id, format);
+      scansApi.exportData(activeScan._id, format, subdomains, activeScan.target_domain);
+    } else {
+      alert('No active scan available for export.');
     }
   };
 
@@ -98,13 +100,14 @@ export default function DashboardPage() {
             </h2>
 
             <div className="flex items-center gap-2">
-              {['txt', 'csv', 'json', 'html'].map((fmt) => (
+              {['TXT', 'CSV', 'JSON', 'HTML'].map((fmt) => (
                 <button
                   key={fmt}
                   onClick={() => handleExport(fmt)}
-                  className="px-2.5 py-1 rounded bg-slate-900 border border-slate-800 text-[11px] font-mono text-slate-300 hover:text-cyan-400 hover:border-cyan-800 transition-all flex items-center gap-1 uppercase"
+                  type="button"
+                  className="px-3 py-1.5 rounded-lg bg-cyan-950/80 border border-cyan-800/80 text-cyan-300 hover:bg-cyan-900 hover:text-white text-xs font-mono font-semibold transition-all flex items-center gap-1.5 shadow-sm"
                 >
-                  <Download className="h-3 w-3" /> {fmt}
+                  <Download className="h-3.5 w-3.5" /> {fmt}
                 </button>
               ))}
             </div>
