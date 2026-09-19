@@ -2,7 +2,7 @@
 
 **SUBSCAN** is a modern, standalone cybersecurity web application built for domain owners, security engineers, and threat analysts. It performs real-time client-side subdomain discovery, DNS-over-HTTPS (DoH) resolution, passive attack-surface risk analysis, and multi-format report exports—all directly inside the browser.
 
-![SUBSCAN Security UI](https://img.shields.io/badge/Security-SOC%20Attack%20Surface%20Recon-cyan)
+![SUBSCAN Security. UI](https://img.shields.io/badge/Security-SOC%20Attack%20Surface%20Recon-cyan)
 ![Stack](https://img.shields.io/badge/Stack-React%2018%20%7C%20Vite%20%7C%20Tailwind%20CSS-blue)
 ![License](https://img.shields.io/badge/License-MIT-emerald)
 
