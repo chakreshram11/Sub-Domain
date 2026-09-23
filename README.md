@@ -10,7 +10,7 @@
 
 ## 🚀 How the Project Works
 
-SUBSCAN performs a controlled 10-stage defensive reconnaissance workflow against authorized target domains:
+SUBSCAN performs a controlled 10-stage defensive reconnaissance workflow against authorized target domains :
 
 ```text
 Target Domain Input (e.g. example.com)
